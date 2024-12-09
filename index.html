@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Expense Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="entry-page" class="container">
+        <h1>Add Participants</h1>
+        <div id="participants-container"></div>
+        <button id="confirm-participants">Confirm</button>
+    </div>
+
+    <div id="main-page" class="container hidden">
+        <h1>Shared Expense Calculator</h1>
+        <div class="input-group">
+            <label for="expense-name">Expense Name:</label>
+            <input type="text" id="expense-name" placeholder="Enter expense name">
+        </div>
+        <div class="input-group">
+            <label for="payer">Payer:</label>
+            <div id="payer-selection" class="selection-boxes"></div>
+        </div>
+        <div class="input-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount paid">
+        </div>
+        <div class="input-group">
+            <label for="participants">Participants:</label>
+            <div id="participants-selection" class="selection-boxes participants-boxes"></div>
+        </div>
+        <button id="add-expense">Add Expense</button>
+
+        <div class="box expenses-container">
+            <h2>Expenses</h2>
+            <div class="expenses-box">
+                <ul id="expenses-list"></ul>
+            </div>
+        </div>
+
+        <div class="box settlement-container">
+            <h2>Settlement</h2>
+            <button id="calculate-settlement">Calculate Settlement</button>
+            <div class="settlement-box">
+                <ul id="settlement-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
